@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by jarabik8810 (http://jsbin.com/foficej/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="image slider">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  
+    
+}
+  .slider{
+  position: relative;
+  width: 400%;
+  animation: animate 8s linear infinite;  
+}
+ .slide{
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  float: left;
+}
+h1{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  font-size:6rem;
+  width: 100%;
+  background: rgba(0,0,0,.6);
+  color: #FFF;
+  transform: translateY(-50%)
+}
+.slide{
+  background-size: cover;
+}
+
+.slide:nth-child(1){
+  background: url('https://s25.postimg.org/qrokn03wf/pexels-photo-263041.jpg');
+  background-size: cover;  
+}
+.slide:nth-child(2){
+  background: url('https://s25.postimg.org/en9b60r0f/pexels-photo-27642.jpg');
+  background-size: cover;
+}
+.slide:nth-child(3){
+  background: url('https://s25.postimg.org/h5v06pcqn/pexels-photo-62097.jpg');
+  background-size: cover;
+}
+.slide:nth-child(4){
+  background: url('https://s25.postimg.org/ybhnp1x33/pexels-225236.jpg');
+  background-size: cover;
+}
+
+@keyframes animate{
+  0%{
+    left: 0;
+  }
+  16%{
+    left: 0;
+  }
+  20%{
+    left: -100%;
+  }
+  36%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  56%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  76%{
+    left: -300%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="slider">
+    <div class="slide">
+      <h1>Slide1</h1>
+    </div>
+    <div class="slide">
+      <h1>Slide2</h1>
+    </div>
+    <div class="slide">
+      <h1>Slide3</h1>
+    </div>
+    <div class="slide">
+      <h1>Slide4</h1>
+    </div>
+  </div>
+</div>
+</body>
+</html>
